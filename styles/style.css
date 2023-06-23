@@ -1,26 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
 :root {
-    /*
-    --cor-background: #2c3639;
-    --cor-text: #dcd7c9;
-    --cor-contranst: #a27b5c;
-    --cor-button-hover: #282828;
-    */
-
-    /*
-    --cor-background: #064635;
-    --cor-text: #F4EEA9;
-    --cor-contranst: #F0BB62;
-    --cor-button-hover: #282828;
-    */
-
-    
-    --cor-background: #243763;
-    --cor-text: #FAD6A5;
-    --cor-contranst: #CFB997;
-    --cor-button-hover: #C1D0B5;
-    
+    --cor-background: #2D373B;
+    --cor-text: #FCFFE7;
+    --cor-contranst: #EB455F;
+    --cor-button-hover: #3d494f;
 }
 
 * {
@@ -60,7 +44,7 @@ body {
 }
 
 .apresentacao {
-    padding: 6% 12%;
+    padding: 4% 12%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +52,7 @@ body {
 }
 
 .apresentacao__conteudo {
-    width: 46%;
+    width: 42%;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -124,11 +108,11 @@ body {
 
 .apresentacao__imagem {
     border-radius: 2rem;
-    width: 32%;
+    width: 40%;
 }
 
 .apresentacao__imagem:hover {
-    border: 0.15rem solid var(--cor-contranst);
+    border: 0.25rem solid var(--cor-contranst);
     border-radius: 2rem;
 }
 
@@ -139,13 +123,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
-    color: var(--cor-background);
+    color: var(--cor-text);
 }
 
 .rodape:hover {
-    background-color: var(--cor-contranst);
+    background-color: #df3750;
 }
-
 
 /* curriculo.html */
 
@@ -154,19 +137,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .curriculo__conteudo {
-    width: 600px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 4rem;
 }
 
 .curriculo__conteudo__topicos {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .curriculo__conteudo__topicos__titulo {
@@ -190,19 +174,19 @@ body {
 
 @media (max-width: 1100px) {
 
-   .cabecalho {
+    .cabecalho {
         padding: 2%;
-   }
-
-   .cabecalho__menu {
+    }
+ 
+    .cabecalho__menu {
         justify-content: center;
-   }
-
+    }
+ 
     .apresentacao {
         flex-direction: column-reverse;
         padding: 4%;
-    }
-
+     }
+ 
     .apresentacao__conteudo {
         width: auto;
     }
